@@ -175,7 +175,7 @@ this.fn_LoadContents = function(strDocID, strargSampleFile, strCategory, strSubj
 					, ""
 					, "fn_callback"
 					, true); */
-	var url = "https://raw.githubusercontent.com/TOBESOFT-DOCS/sample_Nexacrop_N/master/Sample/"+strSampleFile+".xfdl"; 
+	var url = "https://raw.githubusercontent.com/TOBESOFT-DOCS/sample_Nexacro_N/master/Sample/"+strSampleFile+".xfdl"; 
 	request.open("GET", url, true);
 	request.send(null);
 	
