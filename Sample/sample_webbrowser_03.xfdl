@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FDL version="2.0">
+<FDL version="2.1">
   <Form id="sample_webbrowser_03" width="1280" height="720" titletext="New Form" onload="sample_webbrowser_03_onload">
     <Layouts>
       <Layout height="720" mobileorientation="landscape" width="1280">
         <WebBrowser id="WebBrowser00" taborder="0" left="32" top="40" width="540" height="320" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase=""/>
         <Button id="Button00" taborder="1" text="Set input value" left="32" top="376" width="120" height="32" font="9pt Arial" onclick="Button00_onclick"/>
-        <Edit id="Edit00" taborder="2" left="160" top="376" width="400" height="32" border="1px solid grey , 1px solid grey , 1px solid grey, 1px solid grey" value="This is a value from nexacroplatform."/>
+        <Edit id="Edit00" taborder="2" left="160" top="376" width="400" height="32" border="1px solid grey , 1px solid grey , 1px solid grey, 1px solid grey" value="This is a value from Nexacro" text="This is a value from Nexacro"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[/*

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FDL version="2.0">
+<FDL version="2.1">
   <Form id="sample_webbrowser_08" width="1280" height="720" titletext="New Form" onload="sample_webbrowser_08_onload">
     <Layouts>
       <Layout height="720" width="1280">
@@ -26,7 +26,7 @@ this.WebBrowser00_onloadcompleted = function(obj:nexacro.WebBrowser,e:nexacro.We
 
 this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	_win.callMethod("setData", "<p><strong>nexacro platform</strong></p><p><em>Nexacro Platform programming is divided into two parts</em></p><p>one to define user-visible screens visible and a second used for the scripts that implement business logic. Additionally, Nexacro Platform provides capabilities for applying and managing styles and themes in screens.</p>");
+	_win.callMethod("setData", "<p><strong>Nexacro N</strong></p><p><em>Nexacro programming is divided into two parts</em></p><p>one to define user-visible screens visible and a second used for the scripts that implement business logic. Additionally, Nexacro provides capabilities for applying and managing styles and themes in screens.</p>");
 };
 
 this.Button01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
