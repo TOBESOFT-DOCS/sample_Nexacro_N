@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FDL version="2.0">
+<FDL version="2.1">
   <Form id="sample_form_08" left="0" top="0" width="200" height="300" titletext="New Form" border="" background="black" onload="sample_form_08_onload" ontimer="sample_form_08_ontimer" stepshowtype="action">
     <Layouts>
       <Layout height="300" width="200" stepcount="3">
@@ -17,7 +17,9 @@
 this.sample_form_08_ontimer = function(obj:nexacro.Form,e:nexacro.TimerEventInfo)
 {
 	if(e.timerid == 1){
-		this.stepselector.stepIt(true, true);
+		var bSucc = this.setStepIndex(this.getStepIndex()+1);
+		if(!bSucc)
+			this.setStepIndex(0);
 	}
 };]]></Script>
   </Form>

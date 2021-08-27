@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.1">
-  <Form id="sample_nexacroplatform_17" left="0" top="0" width="1440" height="768" titletext="nexacroplatform developer guide" scrollbardecbuttonsize="0" scrollbarincbuttonsize="0" scrolltype="vertical" statustext="" scrollbartype="none" onload="Form_onload" onerror="sample_nexacroplatform_17_onerror">
+  <Form id="sample_Nexacro_N" left="0" top="0" width="1440" height="768" titletext="Nexacro N Developer Guide" scrollbardecbuttonsize="0" scrollbarincbuttonsize="0" scrolltype="vertical" statustext="" scrollbartype="none" onload="Form_onload" onerror="sample_nexacroplatform_17_onerror">
     <Layouts>
       <Layout height="768" width="1440">
         <Div id="Div00" taborder="" text="" left="0" top="0" width="100%" height="52" leftbase="" topbase="" bottombase="" rightbase="" widthbase="" heightbase="" color="" background="#143A84" enableevent="true">
@@ -850,7 +850,7 @@ this.Div00_Static02_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventIn
             <Col id="id_doc">5a971a0c2474a09f</Col>
             <Col id="tree_level">1</Col>
             <Col id="search_subject">4</Col>
-            <Col id="keyword">stepselector, stepIt</Col>
+            <Col id="keyword">setStepIndex, getStepIndex</Col>
             <Col id="subject_zh">利用step功能创建幻灯片</Col>
             <Col id="subject_en">Creating Slideshow with Step Function</Col>
           </Row>

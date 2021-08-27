@@ -44,25 +44,13 @@ this.addGraphicsControl = function()
 	
 	// GraphicsImage
 	var objGImage = new nexacro.GraphicsImage();
-	//this.Graphics00.addChild( "GraphicsImage00", objGImage );
 	objGImage.set_x(200);
 	objGImage.set_y(50);	
-// 	objGImage.set_width(50);	
-// 	objGImage.set_height(50);	
-	objGImage.set_image("url('imagerc::img_50.png')");	
-	// The following format does not work.
-	/*
-	objGImage.setImageLoadEventHandler((function(obj) {
-		trace(obj.isEmptyRect());
-		obj.set_width(obj.imagewidth);
-		obj.set_height(obj.imageheight);
-	})(objGImage), this);
-	*/
 	objGImage.setImageLoadEventHandler(this.fn_checkGImage, this);
+	objGImage.set_image("url('imagerc::img_50.png')");		
 	
 	// GraphicsLine
 	var objGLine = new nexacro.GraphicsLine();
-	//this.Graphics00.addChild( "GraphicsLine00", objGLine );
 
 	objGLine.set_x(50);
 	objGLine.set_y(120);
@@ -72,7 +60,6 @@ this.addGraphicsControl = function()
 	
 	// GraphicsPaths
 	var objGPaths = new nexacro.GraphicsPaths();
-	//this.Graphics00.addChild( "GraphicsPaths00", objGPaths );	
 	objGPaths.set_x(50);
 	objGPaths.set_y(120);
 	objGPaths.set_strokepen('1px solid blue');  
@@ -81,12 +68,8 @@ this.addGraphicsControl = function()
 	var objGPath = new nexacro.GraphicsPath();	
 	trace(objGPath.hasSegments());
 	objGPaths.addChild( "GraphicsPath00", objGPath );
-// 	objGPath.set_x(50);
-// 	objGPath.set_y(120);	
-	//objGPath.bezierCurveTo(400,200,400,300,300,300);
 	objGPath.moveTo(0,0);
 	objGPath.arcTo( 50, 50, 50, 100, 0, true, false );
-	//objGPath.set_strokepen('1px solid red');  
 	trace(objGPath.hasSegments());
 	
 	// GraphicsGroup 
