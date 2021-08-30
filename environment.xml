@@ -9,7 +9,7 @@
     <Variables/>
     <Cookies>
       <Cookie id="Cookie0" initval="TEST"/>
-      <Cookie id="Cookie1" initval="nexacro platform 17"/>
+      <Cookie id="Cookie1" initval="Nexacro N"/>
     </Cookies>
     <httpheader/>
   </Environment>
