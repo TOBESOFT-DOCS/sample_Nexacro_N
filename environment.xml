@@ -4,7 +4,7 @@
     <ScreenDefinition>
       <Screen id="Screen_D" type="desktop" userzoom="true" themeid="theme::blue"/>
       <Screen id="Screen_ja" type="desktop" locale="ja_JP" themeid="theme::blue_ja" specifiedlocale="ja_JP"/>
-      <Screen id="Screen_zh" type="desktop" specifiedlocale="zh_CN"/>
+      <Screen id="Screen_zh" type="desktop" specifiedlocale="zh_CN" themeid="theme::blue_zh"/>
     </ScreenDefinition>
     <Variables/>
     <Cookies>
