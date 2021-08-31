@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FDL version="2.0">
+<FDL version="2.1">
   <Form id="sample_frame_01" left="0" top="0" width="1024" height="768" titletext="New Form" onrbuttondown="Form_onrbuttondown">
     <Layouts>
       <Layout height="768" width="1024">
@@ -20,7 +20,7 @@
 this.btnBorder_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
 	if(this.childframeNew) {
-		this.childframeNew.set_border("1px solid #999999");
+		this.childframeNew.set_border("1px solid blue");
 	} else {
 		trace("childframeNew undefined");
 	}
