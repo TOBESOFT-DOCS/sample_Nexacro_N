@@ -13,22 +13,30 @@
 .Button.sample_button_08[userstatus=selected]
 {
 	-nexa-icon : url('theme://images/chk_WF_Box_F.png');	
-}.Static.Sta_TF_AllMenuTit
+}
+
+.Static.Sta_TF_AllMenuTit
 {
 	background : url("imagerc::Sta_TF_AllMenuTit.png") repeat-x;
-	font : bold 10pt "맑은 고딕";
+	font : bold 10pt "Malgun Gothic";
 	color : #d3d3d3;
 	-nexa-padding : 0px 0px 10px 0px;
-
 }
 
 .Static.Sta_TF_AllMenuTit_ja
 {
 	background : url("imagerc::Sta_TF_AllMenuTit.png") repeat-x;
-	font : bold 10pt "Meiryo UI";
+	font : bold 10pt "Meiryo", "Verdana", "Roboto", "Droid Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS Gothic", "sans-serif";
 	color : #d3d3d3;
 	-nexa-padding : 0px 0px 10px 0px;
+}
 
+.Static.Sta_TF_AllMenuTit_zh
+{
+	background : url("imagerc::Sta_TF_AllMenuTit.png") repeat-x;
+	font : bold 10pt "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "SF Pro SC", "SF Pro Text", "Helvetica", "Arial", "sans-serif";
+	color : #d3d3d3;
+	-nexa-padding : 0px 0px 10px 0px;
 }
 
 .Static.Sta_TF_mapTitle
@@ -36,7 +44,7 @@
 	background : url("imagerc::Sta_TF_mapTitle.png") no-repeat left center;
 	color : #a9aaaa;
 	-nexa-padding : 0px 0px 0px 10px;
-	font : bold 9pt "맑은 고딕";
+	font : bold 9pt "Malgun Gothic";
 	cursor : pointer;	
 }
 
@@ -45,7 +53,16 @@
 	background : url("imagerc::Sta_TF_mapTitle.png") no-repeat left center;
 	color : #a9aaaa;
 	-nexa-padding : 0px 0px 0px 10px;
-	font : bold 9pt "Meiryo UI";
+	font : bold 9pt "Meiryo", "Verdana", "Roboto", "Droid Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS Gothic", "sans-serif";
+	cursor : pointer;	
+}
+
+.Static.Sta_TF_mapTitle_zh
+{
+	background : url("imagerc::Sta_TF_mapTitle.png") no-repeat left center;
+	color : #a9aaaa;
+	-nexa-padding : 0px 0px 0px 10px;
+	font : bold 9pt "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "SF Pro SC", "SF Pro Text", "Helvetica", "Arial", "sans-serif";
 	cursor : pointer;	
 }
 
@@ -58,7 +75,7 @@
 {
 	color : white;
 	-nexa-padding : 0px 0px 0px 10px;
-	font : bold 9pt "맑은 고딕";
+	font : bold 9pt "Malgun Gothic";
 	cursor : pointer;	
 }
 
@@ -66,20 +83,32 @@
 {
 	color : white;
 	-nexa-padding : 0px 0px 0px 10px;
-	font : bold 9pt "Meiryo UI";
+	font : bold 9pt "Meiryo", "Verdana", "Roboto", "Droid Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS Gothic", "sans-serif";
+	cursor : pointer;	
+}
+
+.Static.Sta_TF_menubar_zh
+{
+	color : white;
+	-nexa-padding : 0px 0px 0px 10px;
+	font : bold 9pt "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "SF Pro SC", "SF Pro Text", "Helvetica", "Arial", "sans-serif";
 	cursor : pointer;	
 }
 
 .Static.Sta_TF_manualTitle
 {
-	font : normal bold 14pt/normal "맑은 고딕";
+	font : normal bold 14pt/normal "Malgun Gothic";
 }
 
 .Static.Sta_TF_manualTitle_ja
 {
-	font : normal bold 14pt/normal "Meiryo UI";
+	font : normal bold 14pt/normal "Meiryo", "Verdana", "Roboto", "Droid Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS Gothic", "sans-serif";
 }
 
+.Static.Sta_TF_manualTitle_zh
+{
+	font : normal bold 14pt/normal "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "SF Pro SC", "SF Pro Text", "Helvetica", "Arial", "sans-serif";
+}
 
 .Static.Sta_TF_menubar[status=mouseover]
 {
@@ -186,7 +215,7 @@
 {
 	-nexa-border : 1px solid #ff8f00;
 	-nexa-padding : 5px 0px;	
-	font : 9pt "맑은 고딕";
+	font : 9pt "Arial";
 }
 .Combo.main_combo .combolist .vscrollbar
 {
@@ -215,7 +244,7 @@
 .Combo.main_combo .combolist .listboxitem
 {
 	-nexa-padding : 5px 0px 5px 2px;
-	font : 9pt "맑은 고딕";
+	font : 9pt "Arial";
 }
 .Combo.main_combo .combolist .listboxitem[userstatus=selected]
 {
