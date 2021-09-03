@@ -97,7 +97,7 @@ var strSubjectCol = "subject";//subject
 var strIdDocCol = "id_doc";//id_doc
 var menuList = new Array();
 var firstmenuList = new Object;
-//nexacro._lang = "ja";
+//nexacro._lang = "zh";
 
 /*
  *	예제 화면 상단에 테스트 버전 정보를 출력합니다.
@@ -132,15 +132,15 @@ var firstmenuList = new Object;
 		this.Div03.form.Static02.set_cssclass("Sta_TF_menubar_ja");
 		this.Div00.form.btn_Menu.set_tooltiptext("メニュー");
 	} else if(strLang == "zh") {
-		titleComment = "サンプル・アプリケーションは、nexacro platfromの" + g_strAppInfo.appVersion + "バージョンで動作確認しました。" 
+		titleComment = "示例应用程序已在"+ g_strAppInfo.appVersion +"Nxacro N版本中进行过测试。"
 			+ "\n" 
-			+ "Webブラウザに応じてガイド文書に表示された画像と実行されたサンプルが異なって表示される場合があります。";
+			+ "根据Web浏览器的不同，指南文档中显示的图像与执行的示例可能看起来有所不同。";
 			
 		//this.Div00.form.Static00.set_cssclass("Sta_TF_AllMenuTit_zh");
 		this.Div00.form.Static01.set_cssclass("Sta_TF_menubar_zh");
 		this.Div00.form.Static02.set_cssclass("Sta_TF_menubar_zh");
 		this.Div03.form.Static02.set_cssclass("Sta_TF_menubar_zh");
-		this.Div00.form.btn_Menu.set_tooltiptext("メニュー");
+		this.Div00.form.btn_Menu.set_tooltiptext("菜单");
 	}
 	this.Div00.form.Static00.set_text(titleComment);
 }
@@ -366,17 +366,17 @@ this.setCompLabel = function()
 		this.Div00.form.Static02.set_visible(false);
 	} else if(strLang == "zh") {
 		//menu
-		this.pdiv_Menu.form.Static00.set_text("テーマ別サンプル一覧"); // 주제별 예제 보기
-		this.pdiv_Menu.form.Static01.set_text("基本コンポーネント"); // 기본 컴포넌트
-		this.pdiv_Menu.form.Static02.set_text("Gridコンポーネント"); // Grid 컴포넌트
-		this.pdiv_Menu.form.Static03.set_text("コンテナオブジェクト"); // 컨테이너  오브젝트
+		this.pdiv_Menu.form.Static00.set_text("按主题查看示例"); // 주제별 예제 보기
+		this.pdiv_Menu.form.Static01.set_text("基本组件"); // 기본 컴포넌트
+		this.pdiv_Menu.form.Static02.set_text("Grid 组件"); // Grid 컴포넌트
+		this.pdiv_Menu.form.Static03.set_text("容器对象"); // 컨테이너  오브젝트
 		this.pdiv_Menu.form.Static04.set_text("App、Form、Frame"); // App, Form, Frame
-		this.pdiv_Menu.form.Static99.set_text("全コンポーネント"); // 전체 컴포넌트
+		this.pdiv_Menu.form.Static99.set_text("所有组件"); // 전체 컴포넌트
 		this.pdiv_Menu.form.Static06.set_text("Dataset、Excel"); // Dataset, Excel
-		this.pdiv_Menu.form.Static07.set_text("スクリプト"); // 스크립트
-		this.pdiv_Menu.form.Static05.set_text("nexacroオブジェクト"); // nexacro objects
-		this.pdiv_Menu.form.Static08.set_text("Animationコンポーネント"); // Animation 컴포넌트
-		this.pdiv_Menu.form.Static09.set_text("キーワード別サンプル一覧"); // 키워드별 예제 보기
+		this.pdiv_Menu.form.Static07.set_text("脚本"); // 스크립트
+		this.pdiv_Menu.form.Static05.set_text("nexacro对象"); // nexacro objects
+		this.pdiv_Menu.form.Static08.set_text("Animation组件"); // Animation 컴포넌트
+		this.pdiv_Menu.form.Static09.set_text("按关键字查看示例"); // 키워드별 예제 보기
 
 		this.pdiv_Menu.form.Static00.set_cssclass("Sta_TF_AllMenuTit_zh");
 		this.pdiv_Menu.form.Static01.set_cssclass("Sta_TF_mapTitle_zh");
@@ -391,18 +391,18 @@ this.setCompLabel = function()
 		this.pdiv_Menu.form.Static09.set_cssclass("Sta_TF_AllMenuTit_zh");
 
 		//tab
-		this.Div03.form.Tab00.tp_description.set_text("サンプル"); // 예제
-		this.Div03.form.Tab00.tp_source.set_text("ソース"); // 소스
-		this.Div03.form.Tab00.tp_script.set_text("スクリプト"); // 스크립트
+		this.Div03.form.Tab00.tp_description.set_text("示例"); // 예제
+		this.Div03.form.Tab00.tp_source.set_text("源代码"); // 소스
+		this.Div03.form.Tab00.tp_script.set_text("脚本"); // 스크립트
 		// &gt; 실행중인 예제 새로고침 (클릭하면 예제 화면에 입력한 값을 초기화합니다)
-		this.Div03.form.Static02.set_text("実行中のサンプルを更新（クリックするとサンプル画面で入力した値を初期化します。）"); 
+		this.Div03.form.Static02.set_text("更新正在运行的样本（点击后，将样本画面手动输入的值初始化。）");
 		this.Div03.form.Static02.set_width("600px");
 		
 		//top menu
-		//this.Div00.form.Static01.set_text("サンプルプロジェクトのソースコードをダウンロード"); // &gt; 예제 프로젝트 소스코드 내려받기
-		//this.Div00.form.Static02.set_text("開発ガイド全文書一覧"); // &gt; 개발 가이드 전체 문서 보기
-		this.Div00.form.Static01.set_visible(false);
-		this.Div00.form.Static02.set_visible(false);
+		this.Div00.form.Static01.set_text("下载示例项目源代码"); // &gt; 예제 프로젝트 소스코드 내려받기
+		this.Div00.form.Static02.set_text("查看开发指南全部文档"); // &gt; 개발 가이드 전체 문서 보기
+		//this.Div00.form.Static01.set_visible(false);
+		//this.Div00.form.Static02.set_visible(false);
 	}
 }
 
