@@ -3,38 +3,61 @@
   <Form id="sample_dataobject_03" width="1280" height="720" titletext="New Form">
     <Layouts>
       <Layout height="720" width="1280">
-        <Button id="Button00" taborder="0" text="Create" left="410" top="38" width="100" height="30" onclick="Button00_onclick"/>
-        <Edit id="Edit_name" taborder="1" left="30" top="38" width="77" height="32" displaynulltext="name"/>
-        <Edit id="Edit_salary" taborder="2" left="130" top="38" width="77" height="32" displaynulltext="salary"/>
-        <Edit id="Edit_age" taborder="3" left="230" top="38" width="77" height="32" displaynulltext="age"/>
-        <Grid id="Grid00" taborder="4" left="30" top="125" width="570" height="125" autofittype="col"/>
-        <Button id="Button00_00" taborder="5" text="Search" left="30" top="85" width="100" height="30" onclick="Button00_00_onclick"/>
-        <Edit id="Edit_method" taborder="6" left="323" top="38" width="77" height="32" displaynulltext="strMethod" value="POST" text="POST"/>
-        <TextArea id="TextArea00" taborder="7" left="30" top="260" width="570" height="60" wordWrap="english"/>
+        <Button id="btn_Create" taborder="0" text="Create" left="409" top="204" width="100" height="30" onclick="btn_Create_onclick"/>
+        <Edit id="edituserId" taborder="1" left="29" top="204" width="77" height="32" displaynulltext="userId"/>
+        <Edit id="editid" taborder="2" left="30" top="30" width="77" height="32" displaynulltext="id"/>
+        <Grid id="Grid00" taborder="3" left="30" top="69" width="570" height="125" autofittype="col"/>
+        <Button id="btn_Search" taborder="4" text="Search" left="117" top="30" width="100" height="30" onclick="btn_Search_onclick"/>
+        <TextArea id="TextArea00" taborder="5" left="30" top="320" width="570" height="110" wordWrap="english"/>
+        <Edit id="edittitle" taborder="6" left="112" top="204" width="287" height="32" displaynulltext="title"/>
+        <TextArea id="textAreabody" taborder="7" left="30" top="244" width="369" height="63" displaynulltext="body"/>
       </Layout>
     </Layouts>
     <Objects>
       <DataObject id="DataObject00" onsuccess="DataObject00_onsuccess" onload="DataObject00_onload" onerror="DataObject00_onerror"/>
       <Dataset id="Dataset00"/>
     </Objects>
-    <Script type="xscript5.1"><![CDATA[
-this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+    <Script type="xscript5.1"><![CDATA[// Getting resources
+// https://jsonplaceholder.typicode.com/guide/
+this.btn_Search_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	var strPostdata = JSON.stringify({"name":this.Edit_name.value,"salary":this.Edit_salary.value,"age":this.Edit_age.value});
-	this.DataObject00.request("CREATE", this.Edit_method.value, "http://dummy.restapiexample.com/api/v1/create", {"postdata":strPostdata});
+	var strId = this.editid.value;
+	this.DataObject00.request("SEARCH", "GET", "https://jsonplaceholder.typicode.com/posts"+(strId?"/"+strId:""));
 };
 
-this.Button00_00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+// Creating a resource
+// https://jsonplaceholder.typicode.com/guide/
+this.btn_Create_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	this.DataObject00.request("SEARCH", "GET", "http://dummy.restapiexample.com/api/v1/employees");	
+	var header = {"Content-Type" : "application/json; charset=UTF-8"};
+	var strPostdata = JSON.stringify(
+		{
+			"userId":this.edituserId.value,
+			"title":this.edittitle.value,
+			"body":this.textAreabody.value
+		}
+	);
+	this.DataObject00.request("CREATE", "POST", "https://jsonplaceholder.typicode.com/posts", 
+		{
+			"httpheader":header, 
+			"postdata":strPostdata
+		}
+	);
 };
 
 var serviceid;
 this.DataObject00_onsuccess = function(obj:nexacro.DataObject,e:nexacro.DataObjectEventInfo)
 {
-	var strStatus = JSON.parse(e.response).status;
 	serviceid = e.serviceid;
-	trace(e.serviceid + ":" + strStatus);
+	trace(e.serviceid + ":" + e.statuscode);
+
+    if (e.statuscode == 200)
+        trace("getAllResponseHeaders:"+ obj.getAllResponseHeaders())
+    else if(e.statuscode > 200)
+    {
+        e.preventDefault();
+		this.TextArea00.set_value(obj.getResponse());
+    }
 };
 
 this.DataObject00_onload = function(obj:nexacro.DataObject,e:nexacro.DataObjectLoadEventInfo)
@@ -44,15 +67,16 @@ this.DataObject00_onload = function(obj:nexacro.DataObject,e:nexacro.DataObjectL
 		this.Dataset00.clear();
 		var objData;
 		var strDataobjectpath;
-		if(serviceid == "CREATE")
+		if(serviceid == "SEARCH")
 		{
-			objData = obj.data.data;
-			strDataobjectpath = "$.data";
-		} 
-		else if(serviceid == "SEARCH")
-		{
-			objData = obj.data.data[0];
-			strDataobjectpath = "$.data[*]";
+			if(obj.data.length > 1)
+			{
+				objData = obj.data[0];
+				strDataobjectpath = "$[*]";
+			} else {
+				objData = obj.data;
+				strDataobjectpath = "$";			
+			}
 		}
 		for(var key in objData)
 		{
@@ -74,8 +98,6 @@ this.DataObject00_onerror = function(obj:nexacro.DataObject,e:nexacro.DataObject
 	trace(e.statuscode +":"+e.errormsg);
 	this.TextArea00.set_value(e.statuscode +":"+e.errormsg);
 };
-
-
 ]]></Script>
   </Form>
 </FDL>
