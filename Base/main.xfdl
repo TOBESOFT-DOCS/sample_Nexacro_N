@@ -4216,6 +4216,15 @@ this.Div00_Static02_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventIn
             <Col id="subject_en">Getting Calculation Values Related to Grouped Data</Col>
           </Row>
           <Row>
+            <Col id="category">Dataset</Col>
+            <Col id="subject">정렬 옵션 설정하기</Col>
+            <Col id="id_doc">c22dc15b064073bd</Col>
+            <Col id="id_sample">sample_dataset_10</Col>
+            <Col id="tree_level">1</Col>
+            <Col id="search_subject">5</Col>
+            <Col id="keyword">keystring</Col>
+          </Row>
+          <Row>
             <Col id="category">ExcelObject</Col>
             <Col id="subject">ExcelObject</Col>
             <Col id="tree_level">0</Col>
@@ -4301,6 +4310,24 @@ this.Div00_Static02_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventIn
             <Col id="id_doc_ja">d587966d4c4b0821</Col>
             <Col id="subject_zh">以多种语言显示Button标签</Col>
             <Col id="subject_en">Displaying Button Label in Multiple Languages</Col>
+          </Row>
+          <Row>
+            <Col id="category">DataObject</Col>
+            <Col id="subject">메소드 파라미터 지정해서 request 메소드 실행하기</Col>
+            <Col id="id_sample">sample_dataobject_03</Col>
+            <Col id="id_doc">b7e30fdef2036e2d</Col>
+            <Col id="tree_level">1</Col>
+            <Col id="search_subject">5</Col>
+            <Col id="keyword">request</Col>
+          </Row>
+          <Row>
+            <Col id="category">DataObject</Col>
+            <Col id="subject">양방향 통신 적용하기</Col>
+            <Col id="id_sample">sample_dataobject_04</Col>
+            <Col id="id_doc">837416951b93aa78</Col>
+            <Col id="tree_level">1</Col>
+            <Col id="search_subject">5</Col>
+            <Col id="keyword">ondatachanged,dataobjectbindmode</Col>
           </Row>
           <Row>
             <Col id="category">nexacroObject</Col>
