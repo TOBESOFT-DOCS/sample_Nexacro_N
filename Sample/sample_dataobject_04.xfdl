@@ -133,6 +133,7 @@ this.CheckBox00_onchanged = function(obj:nexacro.CheckBox,e:nexacro.CheckBoxChan
 this.DataObject00_onvaluechanged = function(obj:nexacro.DataObject, e:nexacro.DataObjectValueChangedEventInfo)
 {
 	var id = obj.getObjectByPath(e.dataobjectpath)[e.index]["id"];
+	var uid = e.uid;
 	var method = "PATCH";
 	var objddata = {};
 	objddata[e.key] = e.value;
@@ -143,7 +144,7 @@ this.DataObject00_onvaluechanged = function(obj:nexacro.DataObject, e:nexacro.Da
 		'postdata' : senddata 
 	}
 	this.TextArea00.deleteText();
-	this.DataObject00.request("PATCH", method, this.DataObject00.url+"/"+id, param);
+	this.DataObject00.request(uid, method, this.DataObject00.url+"/"+id, param);
 };
 ]]></Script>
     <Bind>
