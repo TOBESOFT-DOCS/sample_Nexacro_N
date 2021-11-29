@@ -3,7 +3,7 @@
   nexacro Application Theme
   Name		   : blue.xtheme
   Published        : 2020-04-06
-  Last-modified    : 2020-06-11
+  Last-modified    : 2021-10-19
 */
 
 /* Frame/Form */
@@ -858,16 +858,6 @@
 	color : #2665af;
 }
 
-.Menu .menupopupmenu .popupmenuitem .popupmenuitemcheckbox
-{
-	-nexa-padding : 0px 7px 0px 0px;
-	-nexa-icon : URL('theme://images/chk_WF_Popupmenu_O.png');
-}
-
-.Menu .menupopupmenu .popupmenuitem .popupmenuitemcheckbox[status=mouseover]
-{
-	-nexa-icon : URL('theme://images/chk_WF_Popupmenu_O.png');
-}
 
 .Menu .menupopupmenu .popupmenuitem .popupmenuitemtext
 {
@@ -977,17 +967,17 @@
 
 .PopupMenu .popupmenuitem .popupmenuitemcheckbox,.PopupMenuControl .popupmenuitem .popupmenuitemcheckbox
 {
-	background : URL('theme://images/chk_WF_Box_F.png') no-repeat left center;
+	background : URL('theme://images/chk_WF_Popupmenu_O.png') no-repeat left center;
 }
 
 .PopupMenu .popupmenuitem .popupmenuitemcheckbox[status=mouseover],.PopupMenuControl .popupmenuitem .popupmenuitemcheckbox[status=mouseover]
 {
-	background : URL('theme://images/chk_WF_Box_F.png') no-repeat left center;
+	background : URL('theme://images/chk_WF_Popupmenu_O.png') no-repeat left center;
 }
 
 .PopupMenu .popupmenuitem .popupmenuitemcheckbox[status=disabled],.PopupMenuControl .popupmenuitem .popupmenuitemcheckbox[status=disabled]
 {
-	background : URL('theme://images/chk_WF_Box_D.png') no-repeat left center;
+	background : URL('theme://images/chk_WF_Popupmenu.png') no-repeat left center;
 }
 
 .PopupMenu .popupmenuitem .popupmenuitemtext,.PopupMenuControl .popupmenuitem .popupmenuitemtext
