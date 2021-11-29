@@ -1,6 +1,6 @@
 # 넥사크로 N 컴포넌트 활용 워크북 예제 프로젝트
 
-![Product Version](https://img.shields.io/badge/Nexacro-v21.0.0.200-blue.svg)
+![Product Version](https://img.shields.io/badge/Nexacro-v21.0.0.300-blue.svg)
 
 넥사크로 N 컴포넌트 활용 워크북 문서 내 포함된 예제 프로젝트 저장소입니다.
 
