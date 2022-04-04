@@ -334,4 +334,9 @@
 .Grid .body .row .cell.sample_grid_53_cursor[status=mouseover]
 {
     cursor : pointer;
+}
+
+.Grid .body .row .cell.sample_grid_107_cellclick .cellselection
+{
+    -nexa-border : 3px solid lawngreen;
 }]]></XCSS>

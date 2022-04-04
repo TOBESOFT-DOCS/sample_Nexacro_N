@@ -3,7 +3,7 @@
   nexacro Application Theme
   Name		   : blue.xtheme
   Published        : 2020-04-06
-  Last-modified    : 2021-10-19
+  Last-modified    : 2022-03-24
 */
 
 /* Frame/Form */
@@ -383,10 +383,12 @@
     background : #125dae;
 	color : #ffffff;
 }
+
 .Grid .body .selection
 {
 	-nexa-border : 2px solid #125dae;
 }
+
 /* bodycellbutton (Same as ButtonControl) */
 /* bodycellcalendar (Same as CalendarControl) */
 /* bodycellcheckbox (Same as CheckBoxControl) */
@@ -522,6 +524,38 @@
 }
 
 /* cellimage (No style applied) */
+
+/* cellselection */
+.GridCellControl .cellselection
+{
+	-nexa-border : 2px dotted #909090;
+}
+
+/* cellradioitem */
+.GridCellControl .cellradioitem
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio.png');
+	-nexa-text-padding : 0px 0px 0px 5px;
+}
+.GridCellControl .cellradioitem[userstatus=selected]
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio_S.png');
+}
+
+.GridCellControl .cellradioitem[status=mouseover]
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio_O.png');
+}
+
+.GridCellControl .cellradioitem[status=disabled]
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio_D.png');
+}
+
+.GridCellControl .cellradioitem[status=disabled][userstatus=selected]
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio_DS.png');
+}
 
 /* cellmaskedit(Same as MaskEditControl) */
 .GridCellControl .cellmaskedit
@@ -1058,6 +1092,30 @@
 {
 	-nexa-icon : URL('theme://images/rdo_WF_Radio_DS.png');
 }
+.RadioItemControl
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio.png');
+	-nexa-text-padding : 0px 0px 0px 5px;
+}
+.RadioItemControl[userstatus=selected]
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio_S.png');
+}
+
+.RadioItemControl[status=mouseover]
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio_O.png');
+}
+
+.RadioItemControl[status=disabled]
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio_D.png');
+}
+
+.RadioItemControl[status=disabled][userstatus=selected]
+{
+	-nexa-icon : URL('theme://images/rdo_WF_Radio_DS.png');
+}
 
 
 /* Sketch */
@@ -1266,7 +1324,7 @@
 
 .Tab .tabbuttonitem .extrabutton[userstatus=selected]
 {
-	-nexa-icon : URL('theme://images/btn_WF_Tabextra_S.png';
+	-nexa-icon : URL('theme://images/btn_WF_Tabextra_S.png');
 }
 
 .Tab .prevbutton
