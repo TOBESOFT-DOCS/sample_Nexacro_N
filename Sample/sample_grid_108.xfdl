@@ -33,7 +33,7 @@
               </Band>
               <Band id="body">
                 <Cell text="bind:Restaurant"/>
-                <Cell col="1" text="bind:Service" displaytype="radioitemcontrol" edittype="radioitem" radioitemcodevalue="2"/>
+                <Cell col="1" text="bind:Service" displaytype="radioitemcontrol" edittype="radioitem" radioitemcodevalue="1"/>
                 <Cell col="2" text="bind:Service" displaytype="radioitemcontrol" edittype="radioitem" radioitemcodevalue="2"/>
                 <Cell col="3" text="bind:Service" displaytype="radioitemcontrol" edittype="radioitem" radioitemcodevalue="3"/>
                 <Cell col="4" text="bind:Value" displaytype="radioitemcontrol" edittype="radioitem" radioitemcodevalue="1"/>
