@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TypeDefinition version="2.3">
+<TypeDefinition version="3.0">
   <Modules>
     <Module url="CompBase.json"/>
     <Module url="ComComp.json"/>
@@ -44,6 +44,8 @@
     <Component type="JavaScript" id="FileUpTransfer" classname="nexacro.FileUpTransfer"/>
     <Component type="JavaScript" id="Graphics" classname="nexacro.Graphics"/>
     <Component type="JavaScript" id="DataObject" classname="nexacro.DataObject"/>
+    <Component type="JavaScript" id="CheckBoxSet" classname="nexacro.CheckBoxSet"/>
+    <Component type="JavaScript" id="MultiCombo" classname="nexacro.MultiCombo"/>
   </Components>
   <Services>
     <Service prefixid="theme" type="resource" url="./_resource_/_theme_/" version="0" communicationversion="0" include_subdir="true"/>

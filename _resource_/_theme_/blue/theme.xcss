@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XCSS version="1.0"><![CDATA[/* 
+<XCSS version="1.1">
+  <CSSData><![CDATA[/* 
   nexacro Application Theme
   Name		   : blue.xtheme
   Published        : 2020-04-06
-  Last-modified    : 2022-03-24
+  Last-modified    : 2023-07-04
 */
 
 /* Frame/Form */
@@ -1527,24 +1528,24 @@
 	background : #94a9bf;
 }
 
-.DatePickerControl .body .dayitem
+.DatePickerControl .body .dayitem,.DatePickerControl .body .monthitem
 {
 	color : #333333;
 }
 
-.DatePickerControl .body .dayitem[status=mouseover]
+.DatePickerControl .body .dayitem[status=mouseover],.DatePickerControl .body .monthitem[status=mouseover]
 {
 	color : #ffffff;
 	background : #8da3c7;
 }
 
-.DatePickerControl .body .dayitem[status=focused]
+.DatePickerControl .body .dayitem[status=focused],.DatePickerControl .body .monthitem[status=focused]
 {
 	color : #ffffff;
 	background : #125dae;
 }
 
-.DatePickerControl .body .dayitem[userstatus=selected]
+.DatePickerControl .body .dayitem[userstatus=selected],.DatePickerControl .body .monthitem[userstatus=selected]
 {
 	color : #ffffff;
 	background : #125dae;
@@ -1586,12 +1587,48 @@
 	color : #ffffff;
 }
 
-.DatePickerControl .body .dayitem[status=disabled]
+.DatePickerControl .body .dayitem[status=disabled],.DatePickerControl .body .monthitem[status=disabled]
 {
 	color : #cdcdcd;
 }
 
 .DatePickerControl .body .dayitem[status=disabled][userstatus=selected]
+{
+	background : #f0f0f0;
+}
+.DatePickerControl .body .yearitem
+{
+	color : #333333;
+}
+
+.DatePickerControl .body .yearitem[status=mouseover]
+{
+	color : #ffffff;
+	background : #8da3c7;
+}
+.DatePickerControl .body .yearitem[status=focused]
+{
+	color : #ffffff;
+	background : #125dae;
+}
+.DatePickerControl .body .yearitem[userstatus=selected]
+{
+	color : #ffffff;
+	background : #125dae;
+}
+.DatePickerControl .body .yearitem[userstatus=trailingyear]
+{
+	color : #989898;
+}
+.DatePickerControl .body .yearitem[status=mouseover][userstatus=trailingyear]
+{
+	color : #ffffff;
+}
+.DatePickerControl .body .yearitem[status=disabled]
+{
+	color : #cdcdcd;
+}
+.DatePickerControl .body .yearitem[status=disabled][userstatus=selected]
 {
 	background : #f0f0f0;
 }
@@ -2033,4 +2070,195 @@
 .ListView .body .expandbar[userstatus=expand]
 {
 	-nexa-icon : URL('theme://images/btn_expand.png');
-}]]></XCSS>
+}
+/* CheckBoxSet */
+.CheckBoxSet
+{
+    /* No style applied */
+}
+/* CheckBoxSetControl */
+.CheckBoxSetControl
+{
+	background : #ffffff;
+}
+.CheckBoxSetControl[status=disabled]
+{
+	background : #efefef;
+}
+
+.CheckBoxSetControl .checkboxsetitem
+{
+	color : #555555;
+	-nexa-padding : 2px 9px 3px 9px;
+	-nexa-icon : url('theme://images/chk_WF_Box.png');
+	-nexa-text-padding : 0px 0px 0px 6px;
+	
+}
+.CheckBoxSetControl .checkboxsetitem[status=disabled]
+
+{
+	opacity : 0.5;
+	-nexa-icon : url('theme://images/chk_WF_Box_D.png');
+}
+.CheckBoxSetControl .checkboxsetitem[status=mouseover]
+{
+	background : #e7e9ed;
+	-nexa-icon : url('theme://images/chk_WF_Box_O.png');
+}
+.CheckBoxSetControl .checkboxsetitem[userstatus=selected]
+{
+	color : #ffffff;
+	background : #125dae;
+	-nexa-icon : url('theme://images/chk_WF_Box_S.png');
+}
+/* MultiCombo */
+.MultiCombo,.MultiComboControl
+{
+	background : #ffffff;
+	-nexa-border : 1px solid #d5d5d5;
+}
+
+.MultiCombo[status=mouseover],.MultiCombo[status=focused],.MultiComboControl[status=mouseover],.MultiComboControl[status=focused]
+{
+	-nexa-border : 1px solid #5a86cd;
+}
+
+.MultiCombo[status=readonly],.MultiComboControl[status=readonly]
+{
+	background : #efefef;
+}
+
+.MultiCombo[status=disabled],.MultiComboControl[status=disabled]
+{
+	color : #999999;
+	background : #efefef;
+}
+
+.MultiCombo .multicomboedit,.MultiComboControl .multicomboedit
+{
+	/* Same as EditControl */
+}
+
+.MultiCombo .dropbutton,.MultiComboControl .dropbutton
+{
+	-nexa-padding : 1px 2px 0px 0px;
+	-nexa-icon : URL('theme://images/cmb_WF_Drop.png');
+}
+
+.MultiCombo .dropbutton[status=mouseover],.MultiCombo .dropbutton[status=focused],.MultiComboControl .dropbutton[status=mouseover],.MultiComboControl .dropbutton[status=focused]
+{
+	-nexa-icon : URL('theme://images/cmb_WF_Drop_O.png');
+}
+
+.MultiCombo .dropbutton[userstatus=pushed],.MultiCombo .dropbutton[userstatus=selected],.MultiComboControl .dropbutton[userstatus=pushed],.MultiComboControl .dropbutton[userstatus=selected]
+{
+	-nexa-icon : URL('theme://images/cmb_WF_Drop_P.png');
+}
+
+.MultiCombo .dropbutton[status=disabled],.MultiComboControl .dropbutton[status=disabled]
+{
+	opacity : 0.50;
+}
+
+.MultiCombo .multicombotext,.MultiComboControl .multicombotext
+{
+	-nexa-padding : 1px 9px 0px 9px;
+}
+.MultiCombo .multicombotagbox,.MultiComboControl .multicombotagbox
+{
+	-nexa-padding : 5px;
+}
+.MultiComboTagBoxControl
+{
+	-nexa-border : 0px none;
+	-nexa-padding : 5px;
+}
+
+.MultiComboTagBoxControl .tagboxitem
+{
+	-nexa-padding : 3px 9px 3px 9px;
+	background : #eeeeee;
+	border-radius : 10px;
+}
+.MultiComboTagBoxControl .tagboxedit
+{	
+	-nexa-padding : 3px;
+}
+.TagBoxControl
+{
+	-nexa-padding : 3px 9px 3px 9px;
+	background : #eeeeee;
+	border-radius : 10px;
+}
+
+.TagBoxControl[userstatus=selected]
+{
+	background : #5a86cd;
+	color : #ffffff;
+}
+
+.TagBoxControl .tagbutton
+{
+	background : url('theme://images/btn_TF_Close_O.png') no-repeat center center /cover #eeeeee;
+	border-radius : 50%;
+}
+
+.TagBoxControl .tagtext
+{
+	-nexa-padding : 0px 2px 0px 0px;
+}
+
+.MultiComboListControl
+{
+	-nexa-border : 1px solid #d5d5d5;
+}
+
+.MultiComboListControl[status=mouseover]
+{
+	-nexa-border : 1px solid #5a86cd;
+}
+
+.MultiComboListControl[status=disabled]
+{
+	background : #efefef;
+}
+
+.MultiComboListControl .checkboxset
+{
+	font : 12px "Malgun Gothic";
+	color : #555555;
+	background : #ffffff;
+	-nexa-border : 0px none;
+}
+
+.MultiComboListControl .selectallcheckbox
+{
+	color : #555555;
+	background : #ffffff;
+	-nexa-padding : 2px 9px 3px 9px;
+	-nexa-icon : url('theme://images/chk_WF_Box.png');
+	-nexa-text-padding : 0px 0px 0px 6px;
+	-nexa-border : 0px none,0px none,1px solid #d5d5d5;
+}
+
+.MultiComboListControl .selectallcheckbox[status=disabled]
+{
+	opacity : 0.50;
+	-nexa-icon : url('theme://images/chk_WF_Box_D.png');
+}
+
+.MultiComboListControl .selectallcheckbox[status=mouseover]
+{
+	background : #e7e9ed;
+	-nexa-icon : url('theme://images/chk_WF_Box_O.png');
+}
+
+.MultiComboListControl .selectallcheckbox[userstatus=selected]
+{
+	color : #ffffff;
+	background : #125dae;
+	-nexa-icon : url('theme://images/chk_WF_Box_S.png');
+}
+]]></CSSData>
+  <Predefines/>
+</XCSS>

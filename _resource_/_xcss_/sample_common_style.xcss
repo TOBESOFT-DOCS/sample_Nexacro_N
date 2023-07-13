@@ -339,4 +339,9 @@
 .Grid .body .row .cell.sample_grid_107_cellclick .cellselection
 {
     -nexa-border : 3px solid lawngreen;
+}
+
+.MultiCombo.sample_multicombo_04 .multicombotext
+{
+	-nexa-border : 0px  none, 0px  none, 1px solid #d5d5d5;
 }]]></XCSS>
