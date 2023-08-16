@@ -1365,6 +1365,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">1</Col>
             <Col id="keyword">datepickerchangetype</Col>
+            <Col id="subject_en">Delivering the information of selected year and month</Col>
           </Row>
           <Row>
             <Col id="category">CheckBox</Col>
@@ -1417,6 +1418,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="id_sample">sample_checkboxset_01</Col>
             <Col id="keyword">readonlycolumn,editautoselect,editinputtype</Col>
             <Col id="subject_ja">選択できないアイテムの設定</Col>
+            <Col id="subject_en">Setting non-selectable items</Col>
           </Row>
           <Row>
             <Col id="category">Combo</Col>
@@ -2006,6 +2008,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">2</Col>
             <Col id="keyword">selectMultiRow</Col>
+            <Col id="subject_en">Selecting multiple consecutive rows</Col>
           </Row>
           <Row>
             <Col id="category">Grid 레이아웃</Col>
@@ -2855,6 +2858,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">2</Col>
             <Col id="keyword">radioitemcodevalue</Col>
+            <Col id="subject_en">Implementing a simple survey in Grid (use radioitem)</Col>
           </Row>
           <Row>
             <Col id="category">Grid 응용</Col>
@@ -3112,6 +3116,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">2</Col>
             <Col id="keyword">showcellselection</Col>
+            <Col id="subject_en">Display clicked (currently selected) cell</Col>
           </Row>
           <Row>
             <Col id="category">Grid 응용</Col>
@@ -3394,6 +3399,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="id_sample">sample_multicombo_01</Col>
             <Col id="keyword">filter,formatid,displaytype,edittype,onheadvaluechanged</Col>
             <Col id="subject_ja">Gridコンポーネントのヘッダー領域にフィルター機能を追加する</Col>
+            <Col id="subject_en">Adding a filter to the Grid component header area and showing only the items selected in the filter</Col>
           </Row>
           <Row>
             <Col id="tree_level">1</Col>
@@ -3404,6 +3410,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="id_doc">ec4c3b99c07c90ce</Col>
             <Col id="keyword">selecttype,onselectchanged,edittype,index</Col>
             <Col id="subject_ja">Gridコンポーネントで選択中の項目をタグ形式で表示する</Col>
+            <Col id="subject_en">Displaying selected items in the Grid component in the form of tags</Col>
           </Row>
           <Row>
             <Col id="tree_level">1</Col>
@@ -3414,6 +3421,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="id_doc">cc3e1059039c2a45</Col>
             <Col id="keyword">edittype,counttextformat,readonlycolumn</Col>
             <Col id="subject_ja">選択アイテム数の表示</Col>
+            <Col id="subject_en">Showing the information of the number of selected items</Col>
           </Row>
           <Row>
             <Col id="tree_level">1</Col>
@@ -3424,6 +3432,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="id_doc">f8cdf7323deccb1a</Col>
             <Col id="keyword">edittype</Col>
             <Col id="subject_ja">edittypeプロパティ値が「count」である場合のスタイル設定</Col>
+            <Col id="subject_en">Setting the style when the edittype property value is "count"</Col>
           </Row>
           <Row>
             <Col id="category">PopupMenu</Col>
@@ -3905,6 +3914,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">3</Col>
             <Col id="keyword">horizontalgap, verticalgap, flexmainaxisalign, flexcrossaxisalign</Col>
+            <Col id="subject_en">Placing buttons by privileges</Col>
           </Row>
           <Row>
             <Col id="category">PopupDiv</Col>
@@ -4501,6 +4511,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="search_subject">5</Col>
             <Col id="keyword">request</Col>
             <Col id="subject_ja">メソッドのパラメータを指定してrequestメソッド実行</Col>
+            <Col id="subject_en">Executing the request method by specifying method parameters</Col>
           </Row>
           <Row>
             <Col id="category">DataObject</Col>
@@ -4511,6 +4522,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="search_subject">5</Col>
             <Col id="keyword">ondatachanged,dataobjectbindmode</Col>
             <Col id="subject_ja">双方向通信の適用</Col>
+            <Col id="subject_en">Applying two-way communication</Col>
           </Row>
           <Row>
             <Col id="category">nexacroObject</Col>
