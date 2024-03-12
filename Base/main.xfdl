@@ -4383,6 +4383,7 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="subject">Dataset</Col>
             <Col id="tree_level">0</Col>
             <Col id="search_subject">5</Col>
+            <Col id="subject_ja">Dataset</Col>
             <Col id="subject_zh">Dataset</Col>
             <Col id="subject_en">Dataset</Col>
           </Row>
@@ -4394,8 +4395,10 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="id_doc">ef3a0952dff2c13c</Col>
             <Col id="search_subject">5</Col>
             <Col id="keyword">getCaseSum</Col>
+            <Col id="subject_ja">条件付きでデータの平均値および合計値の計算</Col>
             <Col id="subject_zh">根据条件计算数据平均值和总和</Col>
             <Col id="subject_en">Calculating Data Average &amp; Sum by Conditions</Col>
+            <Col id="id_doc_ja">ef3a0952dff2c13c</Col>
           </Row>
           <Row>
             <Col id="category">Dataset</Col>
@@ -4405,8 +4408,10 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">5</Col>
             <Col id="keyword">getColumnInfo</Col>
+            <Col id="subject_ja">カラムの情報の取得およびtypeプロパティ値の変更</Col>
             <Col id="subject_zh">确认列信息并更改type属性值</Col>
             <Col id="subject_en">Checking Column Information &amp; Changing type Property Value</Col>
+            <Col id="id_doc_ja">a043f7d0995eeff1</Col>
           </Row>
           <Row>
             <Col id="category">Dataset</Col>
@@ -4416,8 +4421,10 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">5</Col>
             <Col id="keyword">getRowType, getOrgColumn, getDeletedRowCount, getDeletedColumn</Col>
+            <Col id="subject_ja">削除済のRow情報の取得</Col>
             <Col id="subject_zh">确认删除的Row信息</Col>
             <Col id="subject_en">Checking Deleted Row Information</Col>
+            <Col id="id_doc_ja">0d261e823e8ebe2d</Col>
           </Row>
           <Row>
             <Col id="category">Dataset</Col>
@@ -4427,8 +4434,10 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">5</Col>
             <Col id="keyword">addVariable</Col>
+            <Col id="subject_ja">スクリプトによるDatasetの生成</Col>
             <Col id="subject_zh">通过脚本生成Dataset</Col>
             <Col id="subject_en">Creating Dataset with Script</Col>
+            <Col id="id_doc_ja">ddf4795ac71f6bd1</Col>
           </Row>
           <Row>
             <Col id="category">Dataset</Col>
@@ -4438,8 +4447,10 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">5</Col>
             <Col id="keyword">getColCount</Col>
+            <Col id="subject_ja">変更されたカラム情報を元に戻す</Col>
             <Col id="subject_zh">恢复更改的列信息</Col>
             <Col id="subject_en">Restoring Changed Column Information</Col>
+            <Col id="id_doc_ja">b1997e2a389fd3d5</Col>
           </Row>
           <Row>
             <Col id="category">Dataset</Col>
@@ -4449,8 +4460,10 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">5</Col>
             <Col id="keyword">updatecontrol</Col>
+            <Col id="subject_ja">RowTypeの変更</Col>
             <Col id="subject_zh">更改RowType</Col>
             <Col id="subject_en">Changing RowType</Col>
+            <Col id="id_doc_ja">3ffe2b3450596b25</Col>
           </Row>
           <Row>
             <Col id="category">Dataset</Col>
@@ -4460,8 +4473,10 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">5</Col>
             <Col id="keyword">filter</Col>
+            <Col id="subject_ja">大文字と小文字を区別せずにフィルタリングする</Col>
             <Col id="subject_zh">不区分大小写过滤</Col>
             <Col id="subject_en">Filtering without Case Sensitivity</Col>
+            <Col id="id_doc_ja">04dd86b05e990ca2</Col>
           </Row>
           <Row>
             <Col id="category">Dataset</Col>
@@ -4471,8 +4486,10 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">5</Col>
             <Col id="keyword">getGroupRangeStart, getGroupRangeCount</Col>
+            <Col id="subject_ja">グルーピングしたデータに対してサマリー情報を求める</Col>
             <Col id="subject_zh">获取与分组数据相关的计算值</Col>
             <Col id="subject_en">Getting Calculation Values Related to Grouped Data</Col>
+            <Col id="id_doc_ja">485da3b7bce27dd7</Col>
           </Row>
           <Row>
             <Col id="category">Dataset</Col>
@@ -4482,6 +4499,8 @@ this.pdiv_Menu_Div00_onclick = function(obj:nexacro.Div,e:nexacro.ClickEventInfo
             <Col id="tree_level">1</Col>
             <Col id="search_subject">5</Col>
             <Col id="keyword">keystring</Col>
+            <Col id="subject_ja">ソート時のオプションの設定</Col>
+            <Col id="id_doc_ja">c22dc15b064073bd</Col>
           </Row>
           <Row>
             <Col id="category">ExcelObject</Col>
