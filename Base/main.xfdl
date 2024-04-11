@@ -184,6 +184,9 @@ this.fn_LoadContents = function(strDocID, strargSampleFile, strCategory, strSubj
 			break;
 		case 'sample_static_05':
 			strSampleFile = 'sample_static_05_01';
+			break;	
+		case 'sample_grid_68':
+			strSampleFile = 'sample_grid_68_01';
 			break;			
 		}
 	}
@@ -942,6 +945,7 @@ this.fn_getHttps = function(targetString)
             <Col id="tree_level">1</Col>
             <Col id="search_subject">4</Col>
             <Col id="keyword">components, objects, all</Col>
+            <Col id="subject_ja">オブジェクトへのアクセス</Col>
             <Col id="subject_zh">访问对象</Col>
             <Col id="subject_en">Accessing Object</Col>
           </Row>
@@ -964,6 +968,7 @@ this.fn_getHttps = function(targetString)
             <Col id="tree_level">1</Col>
             <Col id="search_subject">4</Col>
             <Col id="keyword">setTimer, ontimer, killTimer</Col>
+            <Col id="subject_ja">タイマー機能を用いた時刻の表示</Col>
             <Col id="subject_zh">用定时器显示时间</Col>
             <Col id="subject_en">Displaying Time with Timer</Col>
           </Row>
