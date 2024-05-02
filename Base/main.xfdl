@@ -1201,6 +1201,7 @@ this.fn_getHttps = function(targetString)
             <Col id="subject">AnimationTimeline</Col>
             <Col id="tree_level">0</Col>
             <Col id="search_subject">8</Col>
+            <Col id="subject_ja">AnimationTimeline</Col>
             <Col id="subject_zh">AnimationTimeline</Col>
             <Col id="subject_en">AnimationTimeline</Col>
           </Row>
@@ -3633,6 +3634,7 @@ this.fn_getHttps = function(targetString)
             <Col id="subject">Sketch</Col>
             <Col id="tree_level">0</Col>
             <Col id="search_subject">1</Col>
+            <Col id="subject_ja">Sketch</Col>
             <Col id="subject_zh">Sketch</Col>
             <Col id="subject_en">Sketch</Col>
           </Row>
@@ -3815,6 +3817,7 @@ this.fn_getHttps = function(targetString)
             <Col id="subject">VideoPlayer</Col>
             <Col id="tree_level">0</Col>
             <Col id="search_subject">1</Col>
+            <Col id="subject_ja">VideoPlayer</Col>
             <Col id="subject_zh">VideoPlayer</Col>
             <Col id="subject_en">VideoPlayer</Col>
           </Row>
@@ -3847,6 +3850,7 @@ this.fn_getHttps = function(targetString)
             <Col id="subject">WebBrowser</Col>
             <Col id="tree_level">0</Col>
             <Col id="search_subject">1</Col>
+            <Col id="subject_ja">WebBrowser</Col>
             <Col id="subject_zh">WebBrowser</Col>
             <Col id="subject_en">WebBrowser</Col>
           </Row>
