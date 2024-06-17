@@ -886,6 +886,7 @@ this.fn_getHttps = function(targetString)
             <Col id="tree_level">1</Col>
             <Col id="search_subject">4</Col>
             <Col id="keyword">userfontid</Col>
+            <Col id="subject_ja">グーグルフォントの使い方</Col>
             <Col id="subject_zh">使用谷歌字体</Col>
             <Col id="subject_en">Using Google Font</Col>
           </Row>
