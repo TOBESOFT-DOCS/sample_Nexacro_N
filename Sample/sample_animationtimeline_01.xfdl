@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FDL version="2.0">
+<FDL version="2.1">
   <Form id="sample_animationtimeline_01" left="0" top="0" width="1024" height="768" titletext="New Form" onload="sample_animationtimeline_01_onload">
     <Layouts>
       <Layout height="768" width="1024">
@@ -15,13 +15,13 @@
 	var anitimeObj = new nexacro.AnimationTimeline("Anitime00", this);
 	this.addChild("Anitime00", anitimeObj);
 	
-    var aniObj00 = new nexacro.Animation("Ani00", this);
-    this.addChild("Ani00", aniObj00);
-    this.Ani00.addTarget("AniItem00", this.Button00, "left:300");
+	var aniObj00 = new nexacro.Animation("Ani00", this);
+	this.addChild("Ani00", aniObj00);
+	this.Ani00.addTarget("AniItem00", this.Button00, "left:300");
 	
-    var aniObj01 = new nexacro.Animation("Ani01", this);
-    this.addChild("Ani01", aniObj01);
-    this.Ani01.addTarget("AniItem00", this.Button01, "left:300");  
+	var aniObj01 = new nexacro.Animation("Ani01", this);
+	this.addChild("Ani01", aniObj01);
+	this.Ani01.addTarget("AniItem00", this.Button01, "left:300");
 	
 	this.Anitime00.addTarget("AniTimeItem00", aniObj00);
 	this.Anitime00.addTarget("AniTimeItem01", aniObj01);
@@ -29,14 +29,13 @@
 
 this.btnPlay_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-    this.Anitime00.play();
+	this.Anitime00.play();
 };
 
 this.btnInit_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
 	this.Button00.set_left(20);
 	this.Button01.set_left(20);
-};
-]]></Script>
+};]]></Script>
   </Form>
 </FDL>
